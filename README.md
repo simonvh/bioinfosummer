@@ -4,14 +4,17 @@
 
 So you have ChIP-seq data. Peaks of transcription factors or histone modifications. You might also have genome accessibility data, such as ATAC-seq. The data span multiple conditions, timepoints, developmental stages. Now what?
 
-This tutorial covers downstream analysis of ChIP-seq data in a multi-sample setting. It will assume you have already mapped this data and performed peak calling. There are many tutorials available that illustrate how to do this. 
+This tutorial covers downstream analysis of ChIP-seq data in a multi-sample setting. It will assume you have already mapped this data and performed peak calling. There are many tutorials available that illustrate how to do this. See for instance:
+
+* [EBI ChIP-seq practical](https://www.ebi.ac.uk/training/online/course/ebi-next-generation-sequencing-practical-course/chip-seq-analysis/chip-seq-practical)
+* [Hands-on introduction to ChIP-seq analysis - VIB Training](http://www.biologie.ens.fr/~mthomas/other/chip-seq-training/)
 
 ### Learning outcomes
 
 After finishing this tutorial you:
 * Can perform k-means clustering of ChIP-seq data and visualize the results as a heatmap.
 * Can interpret a heatmap of clustered ChIP-seq data.
-* Can identify biologically relevant transcription factor motifs.
+* Can identify biologically relevant transcription factor motifs from ChIP-seq and/or chromatin accessibility data.
 
 
 ## Before you begin
@@ -334,6 +337,10 @@ You can change the ordering of the motifs by clicking on the header.
 **Q:** Check a few cell types. Do the motifs make sense (search the literature if you are not familiar with these cell types)?
 
 Unfortunately, there is no easy way to check if the motifs are relevant. Usually domain knowledge or extensive literature search is necessary to follow up. This computational analysis would serve as a starting point for further analysis. Maybe the way forward would be some experiments?
+
+# License
+
+This material is made available under the [Creative Commons BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). Deel free the share, remix and reuse!
 
 
 
