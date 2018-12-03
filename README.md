@@ -340,7 +340,7 @@ Unfortunately, there is no easy way to check if the motifs are relevant. Usually
 
 # License
 
-This material is made available under the [Creative Commons BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). Deel free the share, remix and reuse!
+This material is made available under the [Creative Commons BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). Feel free to share, remix and reuse!
 
 
 
