@@ -300,7 +300,7 @@ You can sort the output by sorting on the columns header. Sort by 'Enrichmenty a
 
 **Q:** Notice something about these motifs?
 
-Here you see an example of how background sequence will influence a motif analysis. Even though we removed all promoter peaks, which include CpG-island promoters, these putative enhancers apparently have a high GC%. Let's change backgrounds. The `gimme background` tool can also select sequences from the genome that match the GC% of your input sequences. For that, you will need to convert the peak BED file to FASTA using `bedtools`.
+Here you see an example of how the choice of background sequences will influence a motif analysis. Even though we removed all promoter peaks, which include CpG-island promoters, these putative enhancers apparently have a high GC%. Let's change backgrounds. The `gimme background` tool can also select sequences from the genome that match the GC% of your input sequences. For that, you will need to convert the peak BED file to FASTA using `bedtools`.
 
 ```
 # Create FASTA file
@@ -315,7 +315,7 @@ gimme roc top_enhancers.H1.bed background.gc.w200.fa -g hg19 -r roc.report.gc
 
 ### Comparison of motifs in multiple data sets using maelstrom
 
-We will create a tab-separated table with H3K27ac read counts (log-transformed and scaled). For H3K27ac ChIP-seq data we will use relatively broad regions (2kb). If you have other data that gives sharp peaks, such as p300 ChIP-seq, you would use a smaller window. For this tutorial we select only top 1000 peaks (as determined by the variance), as the analysis would otherwise take too long. For a normal analysis you could use more peaks, although this would influence the running time. In my experience ~10,000 peaks would usually already give good results. If you have some other way of pre-selecting informative, dynamic or "interesting" peaks you can use that. 
+We will create a tab-separated table with H3K27ac read counts (log-transformed and scaled). For H3K27ac ChIP-seq data we will use relatively broad regions (2kb). If you have other data that gives sharp peaks, such as p300 ChIP-seq, you would use a smaller window. For this tutorial we select only top 1000 peaks (as determined by the variance), as the analysis would otherwise take too long. For a normal analysis you could use more peaks, although this would influence the running time of `gimme maelstrom`. In my experience ~10,000 peaks would usually already give good results. If you have some other way of pre-selecting informative, dynamic or "interesting" peaks you can use that. 
 
 ```
 coverage_table -p  DNase.H3K27ac.5k.peaks.bed -d *bam -w 2000 -l -s -t 1000 -T var > coverage_table.txt
